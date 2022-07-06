@@ -1,0 +1,88 @@
+/* Place your CSS styles in this file */
+html, body {
+  margin : 0;
+  padding : 0;
+  cursor: url("Bird\ Custom\ Cursor-03.png"), default;
+}
+
+a{
+  cursor: url("Bird\ Custom\ Cursor-04.png"), default;
+}
+
+.wrapper {
+ 
+	width: 100%;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header {
+  background: #188a64;
+  max-width: 100000px;
+  position: relative;
+  z-index: 100000;
+  width: 100%;
+  margin: 0;
+  
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+  margin-right: 100px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: rgb(68, 68, 68);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+  cursor: url("Bird\ Custom\ Cursor-04.png"),default;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: rgb(212, 240, 167);
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+

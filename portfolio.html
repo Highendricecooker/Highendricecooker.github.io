@@ -1,0 +1,119 @@
+<html>
+
+
+    <style>
+        
+        div.gallery {
+          border: 1px solid #ccc;
+        }
+        
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+        
+        div.gallery img {
+          width: 100%;
+          height: auto;
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .responsive {
+          padding: 0 6px;
+          float: left;
+          width: 24.99999%;
+        }
+        
+        @media only screen and (max-width: 700px) {
+          .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+          }
+        }
+        
+        @media only screen and (max-width: 500px) {
+          .responsive {
+            width: 100%;
+          }
+        }
+        
+        .clearfix:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    
+    <header>
+        <div class="wrapper">
+          <h1 class="logo"></h1>
+    
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Explore-Portfolio.html">Portfolio Map</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="About-Me.html">About</a></li>
+              
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+
+
+      <body>
+
+        <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="Artwork/Andy Warhol.png">
+                <img src="Artwork/Andy Warhol.png" alt="Cinque Terre" width="600" height="400">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+          </div>
+          
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="Artwork/Copy of IMG_7225.png">
+                <img src="Artwork/Copy of IMG_7225.png" alt="Forest" width="600" height="400">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="Artwork/Bilingual Typeface Poster FD copy1024_1.jpg">
+                <img src="Artwork/Bilingual Typeface Poster FD copy1024_1.jpg" alt="Northern Lights" width="600" height="400">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="Artwork/ConcertPoster11024_1.jpg">
+                <img src="Artwork/ConcertPoster11024_1.jpg" width="600" height="400">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+          </div>
+
+      </body>
+
+
+
+</html>

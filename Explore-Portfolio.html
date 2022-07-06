@@ -1,0 +1,187 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<header>
+    <div class="wrapper">
+      <h1 class="logo"></h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Explore-Portfolio.html">Portfolio Map</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="About-Me.html">About</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+<style>
+    h1 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+    body{
+        overflow:hidden;
+        text-align: center;
+        background-color: rgba(34, 181, 115, 0.55);
+    }
+    
+    .container{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container .img{
+    flex-shrink: 0;
+    overflow:hidden;
+}
+
+      .project1{
+        position: absolute;
+        top: 30px;
+        left:20px;
+      }
+    
+    .flier .hoverimg{
+    opacity: 0;
+    position: absolute;
+    max-width: 200px;
+    max-height: 200px;
+    top:0;
+    left:0;
+
+    z-index: 99999;
+    }
+    
+    .flier:hover .hoverimg{
+    opacity: 1;
+    }
+    
+    .flier{
+/* Adjust animation duration to change the element’s speed */
+    animation: fly 50s linear infinite;
+	transform: translate(100px, 100px);
+    background-image: url(dog-walking.gif);
+    max-width: 200px;
+    max-height: 200px;
+    width: 100%;
+    height: 100%;
+	position: fixed;
+	animation-delay: 1s;
+	z-index: 999999;
+    background-size: contain;
+}
+
+.flier:hover{
+    opacity: 1;
+    animation-play-state: paused;
+}
+
+ /* Keyframe values control where the element will begin
+    and end its trajectory across the screen. Each rule
+    represents a path the element follows across the screen. */
+
+
+@keyframes fly {
+
+     100%, 0% {
+                display:block;
+                background-image: url(dog-walking.gif);
+                transform: translate(100px, 100px);
+
+                
+	}
+
+	15% {
+        background-image: url(dog-walking.gif);
+        transform: translate(500px, 200px);
+		
+	}
+
+	15.001%{
+		background-image: url(crewmate.png);
+	}
+
+	40% {
+        background-image: url(crewmate.png);
+		transform: translate(200px, 100px);
+	}
+
+	40.001%{
+        background-image: url(잉어킹.png);
+		
+	}
+
+	65% {
+        background-image: url(잉어킹.png);
+		transform: translate(300px, 100px);
+	}
+
+	65.001% {
+        background-image: url(crewmate.png);
+		
+	}
+
+	95% {
+        background-image: url(crewmate.png);
+		transform: translate(100px, 400px);
+	}
+    95.001%{
+        background-image: url(dog-walking.gif);
+        /* transform: translate(100px, 100px); */
+    }
+}
+/* .mydiv{ animation: changeBg 50s infinite; width:143px; height:100px; 
+        z-index: 99999;
+        position:absolute;
+}
+@keyframes changeBg{
+   0%,100%  {background-image: url("https://i.stack.imgur.com/YdrqG.png");
+   transform: translate(100px, 100px);
+   background-image: url(crewmate.png);
+}
+   25% {
+   transform: translate(200px, 200px);}
+   50% {background-image: url("https://i.stack.imgur.com/HobHO.png");
+   transform: translate(-100px, 100px);}
+   75% {background-image: url("https://i.stack.imgur.com/3hiHO.png");
+   transform: translate(-100px, 100px);}
+} */
+    
+    </style>
+
+    <body>
+    <div class = "container">
+        <div class= "img" id = "panzoom">
+            <a href="About-Me.html"> <div class="flier"><img src= "astronaut.png" class="hoverimg"></div></a>
+            <img src="Artwork/Website Map Sketch (shorter)-01.png" width="100%" height="100%"> 
+            <a href="project1.html">
+            <img src = "Artwork/Insomnia Puzzle.png" class = "project1" width="200px">
+            </a> 
+            
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/@panzoom/panzoom@4.5.0/dist/panzoom.min.js"></script>
+    
+    
+    <script>
+    const element = document.getElementById('panzoom');
+    const panzoom = Panzoom(element,{contain:'outside', onlyPanWhenZoomed:'true'});
+    const parent = element.parentElement;
+    parent.addEventListener('wheel', panzoom.zoomWithWheel);
+    
+    </script>
+    
+</body>
+    
+    
+   

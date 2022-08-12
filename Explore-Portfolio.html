@@ -30,7 +30,7 @@
     body{
         overflow:hidden;
         text-align: center;
-        background-color: rgba(34, 181, 115, 0.55);
+        background-color: rgb(255, 255, 255);
     }
     
     .container{
@@ -44,46 +44,55 @@
     overflow:hidden;
 }
 
-      .project1{
+    .project1{
         position: absolute;
         top: 30px;
         left:20px;
-      }
-    
-    .flier .hoverimg{
-    opacity: 0;
-    position: absolute;
-    max-width: 200px;
-    max-height: 200px;
-    top:0;
-    left:0;
-
-    z-index: 99999;
     }
     
+    .flier .hoverimg{
+    background-image: url(Hi.png);
+    opacity: 0;
+    position: absolute;
+    width: 140px;
+    /* top:-15px; */
+    left:-40px;
+    bottom: 0;
+    z-index: 9999;
+    
+    } 
+    
     .flier:hover .hoverimg{
-    opacity: 1;
+        animation-play-state: paused;
+        opacity: 1;
     }
     
     .flier{
 /* Adjust animation duration to change the element’s speed */
-    animation: fly 50s linear infinite;
+    animation: fly 70s linear infinite;
 	transform: translate(100px, 100px);
-    background-image: url(dog-walking.gif);
-    max-width: 200px;
-    max-height: 200px;
+    /* background-image: url(Walking-R.gif); */
+    /* background-size: auto; */
+    max-width: 65px;
+    max-height: 150px;
     width: 100%;
     height: 100%;
 	position: fixed;
 	animation-delay: 1s;
-	z-index: 999999;
+	z-index: 90;
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .flier:hover{
-    opacity: 1;
+    
+    /* animation-play-state: paused; */
     animation-play-state: paused;
+    background-image: url(Hi.png) !important;
+    background-size: 85px;
+    /* opacity: 1; */
 }
+
 
  /* Keyframe values control where the element will begin
     and end its trajectory across the screen. Each rule
@@ -93,76 +102,60 @@
 @keyframes fly {
 
      100%, 0% {
-                display:block;
-                background-image: url(dog-walking.gif);
-                transform: translate(100px, 100px);
+                /* display:block; */
+                background-image: url(Walking-R.gif);
+                transform: translate(300px, 200px);
 
                 
 	}
 
-	15% {
-        background-image: url(dog-walking.gif);
-        transform: translate(500px, 200px);
+	16% {
+        /* second point */
+        background-image: url(Walking-R.gif);
+        transform: translate(1100px, 80px);
 		
 	}
 
-	15.001%{
-		background-image: url(crewmate.png);
+	25% {
+        /* third point */
+        background-image: url(Walking-R.gif);
+		transform: translate(1400px, 100px);
 	}
 
-	40% {
-        background-image: url(crewmate.png);
-		transform: translate(200px, 100px);
-	}
-
-	40.001%{
-        background-image: url(잉어킹.png);
+	48%{
+        /* fourth point */
+        background-image: url(Walking-R.gif);
+        transform: translate(1900px, 800px);
 		
 	}
-
+    48.001%{
+        background-image: url(Walking_L.gif);
+    }
 	65% {
-        background-image: url(잉어킹.png);
-		transform: translate(300px, 100px);
+        background-image: url(Walking_L.gif);
+		transform: translate(1200px, 900px);
 	}
 
-	65.001% {
-        background-image: url(crewmate.png);
-		
+	85% {
+        background-image: url(Walking_L.gif);
+		transform: translate(300px, 800px);
 	}
-
-	95% {
-        background-image: url(crewmate.png);
-		transform: translate(100px, 400px);
-	}
-    95.001%{
-        background-image: url(dog-walking.gif);
+    85.001%{
+        background-image: url(Walking-R.gif);
         /* transform: translate(100px, 100px); */
     }
 }
-/* .mydiv{ animation: changeBg 50s infinite; width:143px; height:100px; 
-        z-index: 99999;
-        position:absolute;
-}
-@keyframes changeBg{
-   0%,100%  {background-image: url("https://i.stack.imgur.com/YdrqG.png");
-   transform: translate(100px, 100px);
-   background-image: url(crewmate.png);
-}
-   25% {
-   transform: translate(200px, 200px);}
-   50% {background-image: url("https://i.stack.imgur.com/HobHO.png");
-   transform: translate(-100px, 100px);}
-   75% {background-image: url("https://i.stack.imgur.com/3hiHO.png");
-   transform: translate(-100px, 100px);}
-} */
-    
+
+
     </style>
 
     <body>
     <div class = "container">
         <div class= "img" id = "panzoom">
-            <a href="About-Me.html"> <div class="flier"><img src= "astronaut.png" class="hoverimg"></div></a>
-            <img src="Artwork/Website Map Sketch (shorter)-01.png" width="100%" height="100%"> 
+            <a href="About-Me.html"> 
+                <div class="flier" ></div>
+            </a>
+            <img src="Artwork/Website Map Sketch-06.png" width="100%" height="100%"> 
             <a href="project1.html">
             <img src = "Artwork/Insomnia Puzzle.png" class = "project1" width="200px">
             </a> 
@@ -178,6 +171,7 @@
     const panzoom = Panzoom(element,{contain:'outside', onlyPanWhenZoomed:'true'});
     const parent = element.parentElement;
     parent.addEventListener('wheel', panzoom.zoomWithWheel);
+  
     
     </script>
     

@@ -86,3 +86,34 @@ nav a:hover::before {
   width: 100%;
 }
 
+
+/* for image gallery portfolio */
+#gallery {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  line-height:0;
+  -webkit-column-count:5; /* split it into 5 columns */
+  -webkit-column-gap:5px; /* give it a 5px gap between columns */
+  -moz-column-count:5;
+  -moz-column-gap:5px;
+  column-count:5;
+  column-gap:5px;
+}
+
+#gallery img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom:5px; /* to match column gap */
+  /* z-index: 1; */
+  position: relative;
+  filter: grayscale(100%)
+
+}
+#gallery img:hover {
+  z-index: 1 !important;
+  filter: none;
+  transition:transform .5s ease;
+  transform: scale(1.25);
+  
+}

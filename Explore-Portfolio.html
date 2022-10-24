@@ -10,7 +10,7 @@
       <nav>
         <ul>
           <li><a href="index.html">Portfolio</a></li>
-          <li><a href="Explore-Portfolio.html">Portfolio Map</a></li>
+          <li><a href="Explore-Portfolio.html">Map</a></li>
           <li><a href="About-Me.html">About</a></li>
           
         </ul>
@@ -36,18 +36,14 @@
     display:flex;
     width: 100%;
     height: 100%;
-    /* overflow: hidden; */
-}
-.container .img{
-    flex-shrink: 0;
-    /* overflow:hidden; */
-}
-
-    .project1{
-        position: absolute;
-        top: 30px;
-        left:20px;
+    overflow: hidden;
     }
+    .container .img{
+        flex-shrink: 0;
+        /* overflow:hidden; */
+    }
+
+    
     
     .flier .hoverimg{
     background-image: url(Hi.png);
@@ -69,7 +65,7 @@
     .flier{
 /* Adjust animation duration to change the element’s speed */
     animation: fly 70s linear infinite;
-	transform: translate(100px, 100px);
+	transform: translate(10%, 10%);
     /* background-image: url(WalkRight1.gif); */
     /* background-size: auto; */
     max-width: 65px;
@@ -103,26 +99,26 @@
      100%, 0% {
                 /* display:block; */
                 background-image: url(WalkRight1.gif);
-                transform: translate(300px, 200px);
+                transform: translate(500%, 100%);
 	}
 
 	16% {
         /* second point */
         background-image: url(WalkRight1.gif);
-        transform: translate(1100px, 80px);
+        transform: translate(1100%, 80%);
 		
 	}
 
 	25% {
         /* third point */
         background-image: url(WalkRight1.gif);
-		transform: translate(1400px, 100px);
+		transform: translate(2200%, 90%);
 	}
 
 	48%{
         /* fourth point */
         background-image: url(WalkRight1.gif);
-        transform: translate(1900px, 800px);
+        transform: translate(2800%, 400%);
 		
 	}
     48.001%{
@@ -130,12 +126,12 @@
     }
 	65% {
         background-image: url(WalkLeft1.gif);
-		transform: translate(1200px, 900px);
+		transform: translate(1200%, 500%);
 	}
 
 	85% {
         background-image: url(WalkLeft1.gif);
-		transform: translate(300px, 800px);
+		transform: translate(300%, 300%);
 	}
     85.001%{
         background-image: url(WalkRight1.gif);
@@ -143,6 +139,62 @@
     }
 }
 
+/* THUMBNAILS */
+    .project1{
+        position: absolute;
+        top:7%;
+        left:7%;
+    }
+    .materials{
+        position: absolute;
+        top:70%;
+        left:7%;
+    }
+    .courier{
+        position: absolute;
+        top:45%;
+        left:25%;
+    }
+    .narrative{
+        position: absolute;
+        top:10%;
+        left:45%;
+    }
+    .watermelon{
+        position: absolute;
+        top:20%;
+        left:65%;
+    }
+    .baskin{
+        position: absolute;
+        top:30%;
+        left:80%;
+    }
+    .cat{
+        position: absolute;
+        top:60%;
+        left:80%;
+    }
+    .color{
+        position: absolute;
+        top:65%;
+        left:60%;
+    }
+    .fergie{
+        position: absolute;
+        top:55%;
+        left:50%;
+    }
+    .car{
+        position: absolute;
+        top:35%;
+        left:50%;
+    }
+    .bilingual{
+        position: absolute;
+        top:25%;
+        left:20%;
+    }
 
     </style>
 
@@ -153,10 +205,39 @@
                 <div class="flier" ></div>
             </a>
             <img src="Artwork/Website Map Sketch-06.png" width="100%" height="100%"> 
-            <a href="project1.html">
-            <img src = "Artwork/Insomnia Puzzle.png" class = "project1" width="200px">
+            <a href="puzzle.html">
+            <img src = "Portfolio Map/Process for _Conceptual-Creative Works_/Process for _Insomnia Puzzle_/Insomnia Puzzle.png" class = "project1" width="200px">
             </a> 
-            
+            <a href="architecture.html">
+                <img src = "Portfolio Map/Process For _Architecture_/Materials.png" class = "materials" width="200px">
+            </a> 
+            <a href="courier.html">
+                <img src = "Portfolio Map/Process for _Book Design_/Process for _Courier_/Artboard 1.png" class = "courier" width="150px">
+            </a> 
+            <a href="narrative.html">
+                <img src = "Portfolio Map/Process for _Book Design_/Process for _Narrative_/Narrative.png" class = "narrative" width="200px">
+            </a> 
+            <a href="watermelon.html">
+                <img src = "Portfolio Map/Process for _Book Design_/Process for _Watermelon_/Watermelon-01.png" class = "watermelon" width="150px">
+            </a>
+            <a href="baskinrob.html">
+                <img src = "Portfolio Map/Process for _Branding_/Process for _Baskin Robins_/BR Logo-02.png" class = "baskin" width="190px">
+            </a>
+            <a href="cat.html">
+                <img src = "Portfolio Map/Process for _collaborative work_/Process for _Desktop Cats_/Copy of Nero_Walk_Faster_R_200.gif" class = "cat" width="190px">
+            </a>
+            <a href="color.html">
+                <img src = "Portfolio Map/Process for _Conceptual-Creative Works_/Process for _Color_/Color 1.png" class = "color" width="190px">
+            </a>
+            <a href="fergie.html">
+                <img src = "Portfolio Map/Process for _Conceptual-Creative Works_/Process for _Fergie_/Fergie Chips.png" class = "fergie" width="190px">
+            </a>
+            <a href="car.html">
+                <img src = "Portfolio Map/Process for _Freelance_/Car.png" class = "car" width="190px">
+            </a>
+            <a href="bilingual.html">
+                <img src = "Portfolio Map/Process for _Type Design_/Process for _Bilingual Typeface_/Bilingual Thumbnail.png" class = "bilingual" width="190px">
+            </a>
         </div>
     </div>
     

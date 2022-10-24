@@ -2,6 +2,7 @@
 html, body {
   margin : 0;
   padding : 0;
+  padding-bottom: 5%;
   cursor: url("Bird\ Custom\ Cursor-03.png"), default;
 }
 

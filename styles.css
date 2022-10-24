@@ -3,11 +3,11 @@ html, body {
   margin : 0;
   padding : 0;
   padding-bottom: 5%;
-  cursor: url("Bird\ Custom\ Cursor-03.png"), default;
+  cursor: url("Birds-01.png"), default;
 }
 
 a{
-  cursor: url("Bird\ Custom\ Cursor-04.png"), default;
+  cursor: url("Birds-02.png"), default;
 }
 /* wrapper for navigation bar */
 .wrapper{
@@ -94,7 +94,7 @@ nav a {
 
 nav li:hover {
   color: #000;
-  cursor: url("Bird\ Custom\ Cursor-04.png"),default;
+  /* cursor: url("Bird\ Custom\ Cursor-04.png"),default; */
 }
 
 nav li::before {

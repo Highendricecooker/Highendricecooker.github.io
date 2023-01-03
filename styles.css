@@ -155,12 +155,12 @@ nav li:hover::before {
   margin-bottom:5px; /* to match column gap */
   /* z-index: 1; */
   position: relative;
-  /* filter: grayscale(100%) */
+  filter: grayscale(100%)
 
 }
 #gallery img:hover {
   z-index: 1 !important;
-  /* filter: none; */
+  filter: none;
   transition:transform .5s ease;
   transform: scale(1.25);
   

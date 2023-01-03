@@ -9,6 +9,12 @@ html, body {
 a{
   cursor: url("Birds-02.png"), default;
 }
+#name{
+  font-family: sans-serif;
+  font-size:xx-large;
+  padding-left: 4.8%;
+  color: orange;
+}
 /* wrapper for navigation bar */
 .wrapper{
 	width: 100%;
@@ -102,7 +108,7 @@ nav li::before {
   content: '';
   display: block;
   height: 5px;
-  background-color: #FAC898;
+  background-color: orange;
   position: absolute;
   top: 0;
   width: 0%;
